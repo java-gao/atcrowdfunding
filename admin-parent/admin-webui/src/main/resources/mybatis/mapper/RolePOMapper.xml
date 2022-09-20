@@ -127,6 +127,11 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+  <select id="selectByKeyword" resultType="com.adtec.crowd.entity.po.RolePO">
+    select name from t_role
+    where name like concat("%",#{keyword},"%")
+  </select>
+
   <update id="updateByExampleSelective" parameterType="map">
     update t_role
     <set>

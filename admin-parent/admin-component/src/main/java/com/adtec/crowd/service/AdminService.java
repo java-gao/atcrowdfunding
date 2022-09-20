@@ -6,9 +6,9 @@ import com.github.pagehelper.PageInfo;
 import java.util.List;
 
 public interface AdminService {
-   AdminPO getAdminByAcct(AdminPO adminPO);
+    AdminPO getAdminByAcct(AdminPO adminPO);
 
-   PageInfo<AdminPO> getAdminBykeyword(String keyword ,Integer pageNum, Integer pageSize);
+    PageInfo<AdminPO> getAdminBykeyword(String keyword, Integer pageNum, Integer pageSize);
 
     void removeAdminById(Integer adminId);
 
